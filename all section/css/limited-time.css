@@ -116,9 +116,12 @@
     font-weight: 400;
 }
 
-.pf-limited-time-section .pf-main-card-scroll-wrapper{
-    height: 100%;
+.pf-limited-time-section .pf-main-card-scroll-wrapper,
+.pf-limited-time-section .pf-main-card-scroll-wrapper2{
+    height: 75vh;
     overflow: hidden;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .pf-limited-time-section .pf-main-card-scroll-wrapper .pf-card-area{
@@ -177,7 +180,7 @@
 
 @keyframes top-to-bottom {
   0% {
-    transform: translateY(-100%);
+    transform: translateY(0%);
   }
   100% {
     transform: translateY(100%);
@@ -187,10 +190,10 @@
 
 @keyframes bottom-to-top {
     0% {
-      transform: translateY(0%);
+      transform: translateY(100%);
     }
     100% {
-      transform: translateY(-100%);
+      transform: translateY(0%);
     }
   }
 
