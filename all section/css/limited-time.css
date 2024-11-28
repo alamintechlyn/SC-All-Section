@@ -26,7 +26,6 @@
     color: #fff;
 }
 
-
 .pf-limited-time-section .pf-text-area .pf-shop-now-btn{
     text-transform: uppercase;
     background: #fff;
@@ -52,12 +51,10 @@
     position: relative;
 }
 
-
 .pf-limited-time-section .pf-text-area .pf-shop-now-btn:hover svg{
     left: 142px;
     border-color: #000;
 }
-
 
 .pf-limited-time-section .pf-text-area .pf-shop-now-btn:hover svg path{
     fill: #000000
@@ -122,8 +119,14 @@
     overflow: hidden;
 }
 
-.pf-limited-time-section .pf-card-area{
-    animation: top-to-bottom 50s linear infinite;
+.pf-limited-time-section .pf-main-card-scroll-wrapper .pf-card-area{
+    animation: top-to-bottom 9s linear;
+    animation-iteration-count: infinite;
+}
+
+.pf-limited-time-section .pf-main-card-scroll-wrapper2 .pf-card-area{
+    animation: bottom-to-top 9s linear;
+    animation-iteration-count: infinite;
 }
 
 .pf-limited-time-section .pf-card-area a{
@@ -185,6 +188,16 @@
   }
 }
 
+
+@keyframes bottom-to-top {
+    0% {
+      transform: translateY(0%);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+/* 
 @keyframes bottom-to-top {
   0% {
     transform: translateY(100%);
@@ -192,7 +205,7 @@
   100% {
     transform: translateY(0%);
   }
-}
+} */
 
   
 
