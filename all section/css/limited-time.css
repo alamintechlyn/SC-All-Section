@@ -122,12 +122,12 @@
 }
 
 .pf-limited-time-section .pf-main-card-scroll-wrapper .pf-card-area{
-    animation: top-to-bottom 35s linear;
+    animation: top-to-bottom 50s linear;
     animation-iteration-count: infinite;
 }
 
 .pf-limited-time-section .pf-main-card-scroll-wrapper2 .pf-card-area{
-    animation: bottom-to-top 35s linear;
+    animation: bottom-to-top 50s linear;
     animation-iteration-count: infinite;
 }
 
@@ -171,7 +171,7 @@
 }
 
 
-.pf-limited-time-section .pf-main-card-scroll-wrapper:hover .pf-card-area .pf-main-card{
+.pf-limited-time-section .pf-main-card-scroll-wrapper:hover .pf-card-area{
    animation-play-state: paused; 
 }
 
