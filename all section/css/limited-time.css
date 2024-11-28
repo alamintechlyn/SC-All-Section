@@ -16,16 +16,18 @@
   }
 
 .pf-limited-time-section{
-    /* padding: 65px; */
-    background-color: black;
+    background-color: #000;
     margin: 55px 0;
     overflow: hidden;
-    height: 80vh;
+    height: 75vh;
 }
 .pf-limited-time-section .pf-text-area .pf-head-text{
     color: #fff;
 }
 
+.pf-limited-time-section .pf-container .pf-row .pf-col-lg-7{
+    margin-top: 5rem;
+}
 .pf-limited-time-section .pf-text-area .pf-shop-now-btn{
     text-transform: uppercase;
     background: #fff;
@@ -120,12 +122,12 @@
 }
 
 .pf-limited-time-section .pf-main-card-scroll-wrapper .pf-card-area{
-    animation: top-to-bottom 9s linear;
+    animation: top-to-bottom 35s linear;
     animation-iteration-count: infinite;
 }
 
 .pf-limited-time-section .pf-main-card-scroll-wrapper2 .pf-card-area{
-    animation: bottom-to-top 9s linear;
+    animation: bottom-to-top 35s linear;
     animation-iteration-count: infinite;
 }
 
@@ -138,7 +140,6 @@
     border: 1px solid #eae6e4;
     border-radius: 15px;
     padding-bottom: 16px;
-    margin-right: 15px;
 }
 
 .pf-limited-time-section .pf-card-area .pf-main-card:nth-last-child(1){
@@ -166,17 +167,12 @@
 }
 
 .pf-limited-time-section .pf-card-area .pf-main-card {
-    margin: 20px;
+    margin-bottom: 20px;
 }
 
-/* .pf-limited-time-section .pf-card-area #pf-main-card-02 {
-  animation: bottom-to-top 10s linear infinite;
-} */
 
-.pf-limited-time-section .pf-card-area:hover #pf-main-card-01,
-
-.pf-limited-time-section .pf-card-area:hover #pf-main-card-02{ 
-    animation-play-state: paused; 
+.pf-limited-time-section .pf-main-card-scroll-wrapper:hover .pf-card-area .pf-main-card{
+   animation-play-state: paused; 
 }
 
 @keyframes top-to-bottom {
@@ -197,15 +193,6 @@
       transform: translateY(-100%);
     }
   }
-/* 
-@keyframes bottom-to-top {
-  0% {
-    transform: translateY(100%);
-  }
-  100% {
-    transform: translateY(0%);
-  }
-} */
 
   
 
