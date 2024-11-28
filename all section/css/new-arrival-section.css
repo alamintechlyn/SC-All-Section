@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* 1.1	Theme Reset Style */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img{
+  width: 100%;
+  max-width: 100%;
+}
+
+a{
+  text-decoration: none;
+}
+
+.pf-new-arrivals-section{
+    padding: 55px 0;
+}
+.pf-new-arrivals-section
+.pf-section-main-heading .pf-head{
+    font-size: 65px;
+    font-weight: 600;
+    font-family: "Poppins", serif;
+    color: #000;
+    padding-bottom: 30px;
+}
+
+.pf-custom-container{
+    max-width: 1720px;
+}
+.pf-new-arrival-card .pf-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.pf-new-arrival-card .pf-img:hover img{
+    transform: scale(1.1)
+}
+.pf-new-arrival-card .pf-img img{
+    transition: all linear .6s;
+}
+.pf-new-arrival-card .pf-img{
+    overflow: hidden;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.pf-new-arrivals-section .pf-new-arrival-card{
+    display: flex;
+    width: 25%;
+}
+
+body{
+    background: #F4F4F4;
+}
+
+.pf-new-arrivals-section .pf-new-arrival-card .pf-text{
+    width: 50%;
+    padding: 30px 25px;
+    background: #ffff;
+    border-radius:0 15px 15px 0;
+}
+.pf-new-arrivals-section .pf-new-arrival-card .pf-text .pf-c-inner-sub-head{
+    color: rgb(59, 59, 59);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    padding-bottom: 20px;
+    max-width: 326px;
+}
+.pf-new-arrivals-section .pf-new-arrival-card .pf-text .pf-c-inner-head{
+    color: #000;
+    font-size: 35px;
+    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+    padding-bottom: 15px;
+    max-width: 326px;
+    line-height: 42px;
+}
+
+.pf-new-arrivals-section .pf-new-arrivals-row{
+    display: flex;
+    gap: 30px;
+}
+
+/* ============== */
+
+.pf-new-arrivals-row .active{
+    width: 50%;
+    height: 420px;
+}
+
+.pf-new-arrival-card .pf-text {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.pf-new-arrivals-row .active .pf-text {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    z-index: 1;
+    width: 50%;
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+    transition: all linear .5s;
+}
+.pf-new-arrivals-row .pf-new-arrival-card .pf-img{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    height: 100%;
+}
+.pf-new-arrivals-row .active .pf-img{
+    width: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 50%;
+    height: 100%;
+    transition: all linear .5s;
+}
+
+.pf-new-arrivals-row .pf-new-arrival-card .pf-img {
+    position: relative;
+}
+.pf-new-arrivals-row .pf-new-arrival-card .pf-img .pf-card-number{
+    position: absolute;
+    right: 25px;
+    bottom: 0;
+    z-index: 1;
+    font-size: 96px;
+    font-family: "Roboto", sans-serif;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: #ffff;
+    -webkit-text-stroke-width: 1px;
+    opacity: 1;
+    transition: all linear .4s;
+}
+.pf-new-arrivals-section .pf-new-arrivals-row .pf-new-arrival-card .pf-text .pf-text-card-number{
+    font-size: 96px;
+    font-family: "Roboto", sans-serif;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: #000;
+    -webkit-text-stroke-width: 1px;
+    opacity: 1;
+    text-align: end;
+    opacity: 0.5;
+    margin-top: 55px;
+}
+.pf-new-arrivals-row .active .pf-img .pf-card-number{
+    opacity: 0;
+    transition: all linear .4s;
+}
+
+.pf-new-arrivals-row .pf-new-arrival-card{
+    position: relative;
+}
+
+
+.pf-new-arrivals-row .pf-new-arrival-card .pf-text .pf-shop-now-btn{
+    text-transform: uppercase;
+    background: #000;
+    color: #ffff;
+    border-radius: 50px;
+    padding: 10px 45px;
+    margin-top: 5px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    display: inline-block;
+    font-weight: 600;
+    transition: all linear .3s;
+}
+.pf-new-arrivals-row .pf-new-arrival-card .pf-text .pf-shop-now-btn svg{
+position: absolute;
+left: 12px;
+top: 7px;
+border: 1px solid #ffff;
+border-radius: 50%;
+transition: all linear .3s;
+}
+.pf-new-arrivals-row 
+.pf-new-arrival-card
+.pf-text
+.pf-shop-now-btn{
+position: relative;
+}
+
+.pf-new-arrivals-row 
+.pf-new-arrival-card
+.pf-text
+.pf-shop-now-btn:hover svg{
+    left: 142px;
+    border-color: #000;
+}
+
+.pf-new-arrivals-row 
+.pf-new-arrival-card
+.pf-text
+.pf-shop-now-btn:hover svg path{
+    fill: #000000
+}
+
+.pf-new-arrivals-row 
+.pf-new-arrival-card
+.pf-text
+.pf-shop-now-btn:hover{
+    background: #93F149;
+    color: #000;
+}
+
+@media (min-width: 1400px) {
+}
+@media(min-width:1200px) and (max-width:1399.98px){ 
+    .pf-custom-container{
+        max-width: 1150px;
+    }
+    .pf-new-arrivals-section .pf-new-arrival-card .pf-text .pf-c-inner-head{
+        font-size: 32px;
+    }
+    .pf-new-arrivals-section .pf-new-arrivals-row .pf-new-arrival-card .pf-text .pf-text-card-number{
+        margin-top: 33px;
+    }
+    .pf-new-arrivals-row .active{
+        width: 100%;
+    }
+}
+@media(min-width:992px) and (max-width:1199.98px){
+    .pf-custom-container{
+        max-width: 960px;
+    }
+    .pf-new-arrivals-section .pf-new-arrivals-row{
+        gap: 10px;
+    }
+
+    .pf-new-arrivals-row .active{
+        width: 100%;
+    }
+
+}
+@media(min-width:768px) and (max-width:991.98px){
+    .pf-custom-container{
+        max-width: 720px;
+    }
+    .pf-new-arrivals-section .pf-new-arrivals-row{
+        flex-direction: column;
+    }
+    .pf-new-arrivals-section .pf-new-arrival-card .pf-text{
+        opacity: 1;
+        visibility: visible;
+    }
+    .pf-new-arrivals-section .pf-new-arrival-card{
+        width: 100%;
+    }
+    .pf-new-arrival-card .pf-text{
+        position: static;
+    }
+    .pf-new-arrivals-section .pf-new-arrival-card{
+        flex-direction: column;
+    }
+    .pf-new-arrivals-section .pf-new-arrival-card .pf-text{
+        width: 100%;
+    }
+    .pf-new-arrivals-section .pf-new-arrivals-row .pf-new-arrival-card .pf-text .pf-text-card-number{
+        display: none;
+    }
+  
+    .pf-new-arrivals-section .pf-new-arrival-card .pf-text .pf-c-inner-head{
+        max-width: 100%;
+    }
+    .pf-new-arrivals-section .pf-new-arrival-card .pf-text .pf-c-inner-sub-head{
+        max-width: 100%;
+    }
+    .pf-new-arrivals-section .pf-section-main-heading .pf-head{
+        font-size: 55px;
+    }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+    .pf-custom-container{
+        max-width: 720px;
+    }
+    .pf-new-arrivals-section .pf-new-arrivals-row{
+        flex-direction: column;
+    }
+    .pf-new-arrivals-section .pf-new-arrival-card .pf-text{
+        opacity: 1;
+        visibility: visible;
+    }
+    .pf-new-arrivals-section .pf-new-arrival-card{
+        width: 100%;
+    }
+    .pf-new-arrival-card .pf-text{
+        position: static;
+    }
+    .pf-new-arrivals-section .pf-new-arrival-card{
+        flex-direction: column;
+    }
+    .pf-new-arrivals-section .pf-new-arrival-card .pf-text{
+        width: 100%;
+    }
+    .pf-new-arrivals-section .pf-new-arrivals-row .pf-new-arrival-card .pf-text .pf-text-card-number{
+        display: none;
+    }
+  
+    .pf-new-arrivals-section .pf-new-arrival-card .pf-text .pf-c-inner-head{
+        max-width: 100%;
+    }
+    .pf-new-arrivals-section .pf-new-arrival-card .pf-text .pf-c-inner-sub-head{
+        max-width: 100%;
+    }
+    .pf-new-arrivals-section .pf-section-main-heading .pf-head{
+        font-size: 45px;
+    }
+    .pf-new-arrivals-section .pf-new-arrival-card .pf-text .pf-c-inner-head{
+        font-size: 30px;
+    }
+}
+@media (max-width: 575px){
+    .pf-custom-container{
+        max-width: 720px;
+    }
+    .pf-new-arrivals-section .pf-new-arrivals-row{
+        flex-direction: column;
+    }
+    .pf-new-arrivals-section .pf-new-arrival-card .pf-text{
+        opacity: 1;
+        visibility: visible;
+    }
+    .pf-new-arrivals-section .pf-new-arrival-card{
+        width: 100%;
+    }
+    .pf-new-arrival-card .pf-text{
+        position: static;
+    }
+    .pf-new-arrivals-section .pf-new-arrival-card{
+        flex-direction: column;
+    }
+    .pf-new-arrivals-section .pf-new-arrival-card .pf-text{
+        width: 100%;
+    }
+    .pf-new-arrivals-section .pf-new-arrivals-row .pf-new-arrival-card .pf-text .pf-text-card-number{
+        display: none;
+    }
+  
+    .pf-new-arrivals-section .pf-new-arrival-card .pf-text .pf-c-inner-head{
+        max-width: 100%;
+    }
+    .pf-new-arrivals-section .pf-new-arrival-card .pf-text .pf-c-inner-sub-head{
+        max-width: 100%;
+    }
+    .pf-new-arrivals-section .pf-section-main-heading .pf-head{
+        font-size: 45px;
+    }
+    .pf-new-arrivals-section .pf-new-arrival-card .pf-text .pf-c-inner-head{
+        font-size: 30px;
+    }
+}

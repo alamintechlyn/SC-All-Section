@@ -1,0 +1,364 @@
+@media (min-width: 1400px) {
+}
+
+@media(min-width:1200px) and (max-width:1399.98px){
+    /* Navigation css start */
+    .nav ul a{
+        margin-right: 32px;
+    }
+    /* Navigation css end */
+
+}
+
+
+@media(min-width:992px) and (max-width:1199.98px){
+ 
+/* Header css start */
+.HeaderText p{
+    padding-top: 0;
+    width: 550px;
+}
+
+
+.nav ul a{
+    margin-right: 23px;
+    font-size: 14px;
+}
+/* Header css end */
+}
+
+
+
+@media(min-width:768px) and (max-width:991.98px){
+
+/* Header css start */
+.HeaderText{
+    display: none;
+}
+.Header{
+    padding: 22px 0;
+}
+.headerRow::after{
+    bottom: -22px;
+}
+/* Header css end */
+
+/* Navigation css start */
+    .nav ul{
+        display: none;
+    }
+
+    .navbarToggle svg{
+        display: block;
+    }
+    .active{
+        display: block !important;
+    }
+    .nav li a{
+        padding-bottom: 20px;
+    }
+
+    .nav ul{
+        text-align: center;
+    }
+ 
+    .Navigation{
+        padding: 0;
+    } 
+/* Navigation css end */
+
+/* Banner css start */
+.BannerText h1 {
+    font-size: 45px;
+    max-width: 554px;
+    line-height:70px;
+}
+.BannerText p{
+    max-width: 478px;
+}
+.Banner{
+    padding: 101px 0;
+
+}
+/* Banner css end */
+
+}
+
+
+@media (min-width: 576px) and (max-width: 767px) {
+   /* Header css start */
+.HeaderText{
+    display: none;
+}
+.Header{
+    padding: 22px 0;
+}
+.headerRow::after{
+    bottom: -22px;
+}
+/* Header css end */
+
+
+/* Navigation css start */
+.nav ul{
+    display: none;
+}
+
+.navbarToggle svg{
+    display: block;
+}
+.active{
+    display: block !important;
+}
+ 
+.Navigation{
+    padding: 0;
+} 
+/* Navigation css end */
+
+
+/* Banner css start */
+.BannerText h1 {
+    font-size: 40px;
+    max-width: 499px;
+    line-height: 59px;
+}
+.BannerText p{
+    max-width: 382px;
+}
+.Banner{
+    padding: 101px 0;
+
+}
+/* Banner css end */
+
+}
+
+@media (min-width: 520px) and (max-width: 575.98px) { 
+   
+/* Header css start */
+.HeaderText{
+    display: none;
+}
+.Header{
+    padding: 22px 0;
+}
+.headerRow::after{
+    bottom: -22px;
+}
+/* Header css end */
+
+
+/* Navigation css start */
+.nav ul{
+    display: none;
+}
+
+.navbarToggle svg{
+    display: block;
+}
+.active{
+    display: block !important;
+}
+ 
+.Navigation{
+    padding: 0;
+} 
+/* Navigation css end */
+
+
+
+/* Banner css start */
+.BannerText h1 {
+    font-size: 40px;
+    max-width: 499px;
+    line-height: 59px;
+}
+.BannerText p{
+    max-width: 382px;
+}
+.Banner{
+    padding: 101px 0;
+
+}
+/* Banner css end */
+
+
+}
+
+
+
+
+@media (min-width: 370px) and (max-width: 519.98px) {
+
+  /* Header css start */
+.HeaderText{
+    display: none;
+}
+.Header{
+    padding: 22px 0;
+}
+.headerRow::after{
+    bottom: -22px;
+}
+
+.HeaderIcon a svg{
+    width: 20px;
+    height: 20px;
+}
+
+.HeaderIcon a {
+    margin-right: 15px;
+}
+
+.navbarToggle svg{
+    width: 20px;
+    height: 20px;
+}
+.count p{
+    width: 20px;
+    height: 20px;
+    padding-top: 3px;
+    left: 8px;
+    top: -8px;
+}
+
+.headerLogo img {
+    width: 145px;
+    max-width: 100%;
+}
+/* Header css end */
+
+
+
+/* Navigation css start */
+.nav ul{
+    display: none;
+}
+
+.navbarToggle svg{
+    display: block;
+}
+.active{
+    display: block !important;
+}
+ 
+.Navigation{
+    padding: 0;
+} 
+/* Navigation css end */
+
+
+/* Banner css start */
+.BannerText h1 {
+    font-size: 35px;
+    max-width: 499px;
+    line-height: 52px;
+}
+.BannerText p{
+    max-width: 382px;
+    font-size: 14px;
+    line-height: 28px;
+}
+.Banner{
+    padding: 80px 0;
+}
+.BannerText button {
+    padding: 10px 20px;
+    font-size: 14px;
+}
+/* Banner css end */
+
+
+
+
+}
+
+@media (max-width: 369.98px) {
+   
+/* Header css start */
+.HeaderText{
+    display: none;
+}
+.Header{
+    padding: 22px 0;
+}
+.headerRow::after{
+    bottom: -22px;
+}
+
+.HeaderIcon a svg{
+    width: 20px;
+    height: 20px;
+}
+.HeaderIcon a {
+    margin-right: 15px;
+}
+
+.navbarToggle svg{
+    width: 20px;
+    height: 20px;
+}
+.count p{
+    width: 20px;
+    height: 20px;
+    padding-top: 3px;
+    left: 8px;
+    top: -8px;
+}
+.headerLogo img {
+    width: 145px;
+    max-width: 100%;
+}
+/* Header css end */
+
+
+/* Navigation css start */
+.nav ul{
+    display: none;
+}
+
+.active{
+    display: block;
+}
+
+.navbarToggle svg{
+    display: block;
+}
+
+.active{
+    display: block !important;
+}
+ 
+.Navigation{
+    padding: 0;
+} 
+/* Navigation css end */
+
+
+/* Banner css start */
+.BannerText h1 {
+    font-size: 30px;
+    max-width: 100%;
+    line-height: 44px;
+}
+.BannerText p{
+    max-width: 382px;
+    font-size: 14px;
+    line-height: 28px;
+}
+.Banner{
+    padding: 70px 0;
+}
+.BannerText button {
+    padding: 10px 20px;
+    font-size: 14px;
+}
+/* Banner css end */
+
+
+}
+
+
+
+

@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* 1.1	Theme Reset Style */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+img{
+  width: 100%;
+  max-width: 100%;
+}
+/* video collection slider css */
+.pf-video-collection-section .pf-row .pf-main-slider .pf-heading .pf-head{
+    font-size: 32px;
+    color: #000;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+.pf-video{
+    width: 100%;
+    height: 100%;
+}
+.pf-video video{
+    width: 100%;
+    max-width: 100%;
+    height: 672px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-top: 2.5rem;
+    transition: height 0.4s ease;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* =========== */
+.pf-video-collection-swiper .swiper-wrapper .swiper-slide-active .pf-slider-wrapper .pf-video video{
+    height: 750px;
+    margin-bottom: 10px;
+    width: 100%;
+    margin-top: 0;
+}
+
+.pf-video-collection-section .pf-main-slider .pf-heading .pf-head{
+    margin-bottom: 30px;
+}
+
+.pf-video-collection-section{
+    padding: 55px 0;
+}
+
+
+.pf-video-collection-swiper .pf-slider-wrapper 
+.pf-text-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.pf-video-collection-swiper .pf-slider-wrapper 
+.pf-text-bottom .pf-img img{
+    max-width: 100px;
+    height: 100px;
+}
+.pf-video-collection-swiper .pf-slider-wrapper 
+.pf-text-bottom{
+    border: 1px solid #6666;
+    border-radius: 15px;
+    opacity: 0;
+}
+
+.pf-video-collection-swiper .swiper-wrapper .swiper-slide-active .pf-slider-wrapper .pf-text-bottom{
+    opacity: 1;
+}
+
+.pf-slider-wrapper{
+    padding-bottom: 2.5rem;
+}
+
+.pf-video-collection-swiper .pf-slider-wrapper 
+.pf-text-bottom .pf-text .pf-des-head {
+   color: rgb(113, 89, 57);
+   font-size: 16px;
+   font-weight: 400;
+   font-family: "Poppins", sans-serif; 
+   margin-bottom: 8px;
+}
+.pf-video-collection-swiper .pf-slider-wrapper 
+.pf-text-bottom .pf-text .pf-des-head2 {
+   color: rgba(0, 0, 0, 0.63);
+   font-size: 16px;
+   font-weight: 400;
+   font-family: "Poppins", sans-serif; 
+   margin-bottom: 8px;
+   transition: all linear .3s;
+}
+.pf-video-collection-swiper .pf-slider-wrapper 
+.pf-text-bottom .pf-text .pf-des-head2:hover {
+    color: rgb(113, 89, 57);
+}
+
+.pf-video-collection-swiper .pf-slider-wrapper 
+.pf-text-bottom .pf-text:hover{
+    color: #715939;
+}
+
+.pf-video-collection-swiper .pf-slider-wrapper 
+.pf-text-bottom .pf-text .pf-des-sub{
+   color: rgb(0, 0, 0);
+   font-size: 16px;
+   font-weight: 400;
+   font-family: "Poppins", sans-serif; 
+}
+.pf-video-collection-swiper .pf-slider-wrapper 
+.pf-text-bottom a .pf-icon svg{
+   border: 1px solid #666;
+   border-radius: 50%;
+   display: inline-block;
+   padding: 5px;
+   transition: all linear .3s;
+}
+.pf-video-collection-swiper .pf-slider-wrapper 
+.pf-text-bottom a .pf-icon:hover svg{
+   border-color: #715939;
+}
+.pf-video-collection-swiper .pf-slider-wrapper 
+.pf-text-bottom a .pf-icon svg path{
+fill: #000000e0;
+transition: all linear .3s;
+}
+.pf-video-collection-swiper .pf-slider-wrapper 
+.pf-text-bottom a .pf-icon:hover svg path{
+fill: #715939;
+}
+.pf-video-collection-swiper .pf-slider-wrapper 
+.pf-text-bottom a .pf-icon {
+    margin-right: 50px;
+}
+
+
+.pf-video-collection-swiper .swiper-button-next,
+.pf-video-collection-swiper .swiper-button-prev {
+    top: var(--swiper-navigation-top-offset, 40%);
+}
+
+.pf-video-collection-swiper .swiper-button-prev, .swiper-rtl .pf-video-collection-swiper .swiper-button-next {
+    left: var(--swiper-navigation-sides-offset, 30px);
+}
+.pf-video-collection-swiper .swiper-button-next, .swiper-rtl .swiper-button-prev {
+    right: var(--swiper-navigation-sides-offset, 30px);
+}
+
+.pf-video-collection-swiper .swiper-button-next, 
+.pf-video-collection-swiper .swiper-button-prev{
+    background: #F7F2F0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.pf-video-collection-swiper .swiper-button-prev:after{
+    font-size: 16px;
+    color: #000;
+}
+.pf-video-collection-swiper .swiper-button-next:after{
+    font-size: 16px;
+    color: #000;
+}

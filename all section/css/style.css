@@ -1,0 +1,171 @@
+
+/*------------------------------------------------------------------
+1. common css
+----------------------------------------------------------------*/
+/*---------------------------
+	Fonts
+----------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* 1.1	Theme Reset Style */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img{
+  width: 100%;
+  max-width: 100%;
+}
+
+.pf-collection-section{
+  padding: 55px 0;
+}
+
+/* collection part start */
+
+.pf-collection-section .pf-collection-heading .pf-section-heading{
+  font-size: 46.4px;
+  font-weight: 700;
+  color: #000000;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+.pf-collection-section .pf-collection-heading .pf-section-sub-heading{
+  color: #000000;
+  font-size: 32.2016px;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  margin: 9px 0 28px 0;
+}
+
+.pf-collection-section .pf-collection-heading .pf-collection-btn{
+  color: #000000;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+} 
+
+.pf-collection-section .pf-collection-heading{
+  margin-bottom: 35px;
+}
+
+.pf-collection-cart .pf-card-text{
+  position: absolute;
+  bottom: 10%;
+  left: 16%;
+}
+.pf-collection-cart{
+  position: relative;
+}
+.pf-collection-cart .pf-card-text h4{
+  color: #ffff;
+  font-size: 36px;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+} 
+.pf-collection-cart .pf-card-text a{
+  color: #000000;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+  display: flex;
+  background: #ffff;
+  border-radius: 5px;
+  padding: .75rem 2.75rem;
+  margin-top: 40px;
+  text-transform: uppercase;
+  gap: 10px;
+  transition: all linear .3s;
+} 
+
+.pf-collection-cart {
+  overflow: hidden; 
+}
+
+.pf-collection-cart img {
+  transition: transform 0.3s ease; 
+}
+
+.pf-collection-cart:hover img {
+  transform: scale(1.1); 
+}
+
+.swiper-slide:nth-child(1) {
+  margin-top: 2rem;
+}
+.swiper-slide:nth-child(3) {
+  margin-top: 3.75rem;
+}
+.swiper-slide:nth-child(5) {
+  margin-top: 3.75rem;
+}
+.swiper-slide:nth-child(6) {
+  margin-top:2rem;
+}
+
+.pf-arrow svg{
+  margin-left: 10px;
+  cursor: pointer;
+}
+.pf-arrow{
+  margin-top: 3rem;
+}
+
+.pf-collection-section .pf-arrow svg:hover{
+  border: 1px solid #666;
+  border-radius: 5px;
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .pf-collection-section .pf-collection-heading .pf-section-sub-heading{
+    font-size: 28px;
+  }
+  .pf-collection-section .pf-collection-heading .pf-section-heading{
+    font-size: 35px;
+  }
+  .pf-collection-section .pf-container .pf-row{
+      flex-direction: column;
+  }
+  .pf-arrow {
+    margin: 0;
+    margin-left: auto;
+    display: flex;
+    margin-bottom: 10px;
+  }
+  .pf-collection-section .pf-collection-heading{
+    margin-bottom: 20px;
+  }
+  .pf-collection-section .pf-container .pf-row .pf-col-9{
+    width: 100%;
+  } 
+}
+@media (max-width: 575px){
+  .pf-collection-section .pf-collection-heading .pf-section-sub-heading{
+    font-size: 28px;
+  }
+  .pf-collection-section .pf-collection-heading .pf-section-heading{
+    font-size: 35px;
+    max-width: 100%;
+  }
+  .pf-collection-section .pf-container .pf-row{
+      flex-direction: column;
+  }
+
+  .pf-arrow {
+    margin: 0;
+    margin-left: auto;
+    display: flex;
+    margin-bottom: 10px;
+  }
+  .pf-collection-section .pf-collection-heading{
+    margin-bottom: 20px;
+  }
+  .pf-collection-section .pf-container .pf-row .pf-col-9{
+    width: 100%;
+  } 
+}
+/* collection part end */

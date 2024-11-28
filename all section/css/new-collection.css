@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* 1.1	Theme Reset Style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* new collection section css start */
+
+.pf-new-collection-section {
+  padding: 55px 0;
+}
+
+.pf-new-collection-section .pf-container .pf-row .pf-col-lg-12 {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #000;
+  padding-bottom: 30px;
+}
+
+.pf-new-collection-section .pf-section-button {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.pf-new-collection-section .pf-section-button .btn a {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Roboto Mono", monospace;
+  text-transform: uppercase;
+  background: #000;
+  color: #fff;
+  padding: 1rem 2.4rem;
+  border-radius: 8px;
+
+}
+
+.pf-new-collection-section .pf-section-heading .pf-heading {
+  font-size: 16px;
+  font-family: "Roboto Mono", monospace;
+  text-transform: uppercase;
+  color: rgb(234, 22, 22);
+  margin-bottom: 5px;
+}
+
+.pf-new-collection-section .pf-section-heading .pf-heading-title {
+  font-size: 36px;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.pf-collection-slider {
+  margin-top: 2.2rem;
+}
+
+.pf-arrow-icons .pf-icon-arrow-prev,
+.pf-arrow-icons .pf-icon-arrow-next {
+  cursor: pointer;
+}
+
+.pf-collection-slider .swiper-wrapper .swiper-slide .pf-img-area a img {
+  border-bottom: 1px solid #5F5F5F;
+  padding-bottom: 18px;
+}
+
+.pf-collection-slider .swiper-wrapper .swiper-slide .pf-img-area .pf-product-text {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pf-collection-slider .swiper-wrapper .swiper-slide .pf-img-area .pf-product-text .pf-title {
+  font-size: 19px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+.pf-collection-slider .swiper-wrapper .swiper-slide .pf-img-area .pf-product-text .pf-price {
+  font-size: 19px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+
+.pf-collection-slider .pf-img-area .pf-quickview-btn a {
+  position: absolute;
+  left: 50%;
+  bottom: 23px;
+  text-decoration: none;
+  color: #ffff;
+  font-size: 16px;
+  font-family: "Roboto Mono", monospace;
+  text-transform: uppercase;
+  background: #000;
+  padding: 7px 12px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: all linear .3s;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.pf-collection-slider .pf-img-area:hover .pf-quickview-btn a {
+  opacity: 1;
+}
+
+.pf-collection-slider .pf-img-area .pf-quickview-btn {
+  position: relative;
+
+}
+
+@media(min-width:768px) and (max-width:991.98px) {
+  .pf-collection-slider .pf-img-area .pf-quickview-btn a {
+    opacity: 1;
+    width: 100%;
+    text-align: center;
+    padding: 14px 0;
+    bottom: 0;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .pf-new-collection-section .pf-container .pf-row .pf-col-lg-12 {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .pf-collection-slider .pf-img-area .pf-quickview-btn a {
+    opacity: 1;
+    width: 100%;
+    text-align: center;
+    padding: 14px 0;
+    bottom: 0;
+  }
+
+  .pf-new-collection-section .pf-section-button {
+    justify-content: flex-end;
+  }
+
+  .pf-arrow-icons .pf-icon-arrow-prev,
+  .pf-arrow-icons .pf-icon-arrow-next {
+    display: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .pf-new-collection-section .pf-container .pf-row .pf-col-lg-12 {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .pf-collection-slider .pf-img-area .pf-quickview-btn a {
+    opacity: 1;
+    width: 100%;
+    text-align: center;
+    padding: 14px 0;
+    bottom: 0;
+  }
+
+  .pf-new-collection-section .pf-section-button {
+    justify-content: flex-end;
+  }
+
+  .pf-arrow-icons .pf-icon-arrow-prev,
+  .pf-arrow-icons .pf-icon-arrow-next {
+    display: none;
+  }
+
+}
+
+
+
+
+/* swiper css */
+
+.pf-img-area a .pf-collection-img-slider-arrows {
+  position: relative;
+  opacity: 0;
+}
+
+.pf-img-area a .pf-collection-img-slider-arrows .pf-icon-product-img-arrow-next {
+  position: absolute;
+  left: 0;
+  top: 11.5rem;
+  z-index: 2;
+}
+
+.pf-img-area a .pf-collection-img-slider-arrows .pf-icon-product-img-arrow-prev {
+  position: absolute;
+  right: 0;
+  top: 11.5rem;
+  z-index: 2;
+}
+
+.pf-img-area a .pf-collection-img-slider-arrows .pf-icon-product-img-arrow-next-02 {
+  position: absolute;
+  left: 0;
+  top: 11.5rem;
+  z-index: 2;
+}
+
+.pf-img-area a .pf-collection-img-slider-arrows .pf-icon-product-img-arrow-prev-02 {
+  position: absolute;
+  right: 0;
+  top: 11.5rem;
+  z-index: 2;
+}
+
+.pf-img-area a .pf-collection-img-slider-arrows .pf-icon-product-img-arrow-next-03 {
+  position: absolute;
+  left: 0;
+  top: 11.5rem;
+  z-index: 2;
+}
+
+.pf-img-area a .pf-collection-img-slider-arrows .pf-icon-product-img-arrow-prev-03 {
+  position: absolute;
+  right: 0;
+  top: 11.5rem;
+  z-index: 2;
+}
+
+.pf-img-area a .pf-collection-img-slider-arrows .pf-icon-product-img-arrow-next-04 {
+  position: absolute;
+  left: 0;
+  top: 11.5rem;
+  z-index: 2;
+}
+
+.pf-img-area a .pf-collection-img-slider-arrows .pf-icon-product-img-arrow-prev-04 {
+  position: absolute;
+  right: 0;
+  top: 11.5rem;
+  z-index: 2;
+}
+
+.pf-img-area a .pf-collection-img-slider-arrows .pf-icon-product-img-arrow-next-05 {
+  position: absolute;
+  left: 0;
+  top: 11.5rem;
+  z-index: 2;
+}
+
+.pf-img-area a .pf-collection-img-slider-arrows .pf-icon-product-img-arrow-prev-05 {
+  position: absolute;
+  right: 0;
+  top: 11.5rem;
+  z-index: 2;
+}
+
+.pf-img-area:hover a .pf-collection-img-slider-arrows {
+  opacity: 1;
+}
+
+.pf-img-area a .pf-collection-img-slider-arrows svg path {
+  fill: #000;
+}
+
+
+.pf-img-area a {
+  position: relative;
+}
+
+.pf-img-area a .pf-sale {
+  position: absolute;
+  left: 17px;
+  top: 17px;
+  z-index: 2;
+  background: #000;
+  width: 60px;
+  height: auto;
+  border-radius: 3px;
+}
+
+.pf-img-area a .pf-sale p {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+}
+
+/* new collection section css end */
+
+.pf-collection-thumbs-03 .swiper-slide-thumb-active {
+  border: 1px solid #5F5F5F;
+}
+
+.pf-collection-thumbs-03 .swiper-wrapper .swiper-slide img {
+  width: 40px;
+  height: auto;
+  cursor: pointer;
+}
+
+.pf-collection-thumbs-03 .swiper-wrapper .swiper-slide {
+  width: 40px !important;
+  margin-top: 0.5rem;
+}
+
+/* hover icon */
+/* .animation-wrapper {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+}
+
+.button-label {
+  display: inline-block;
+  position: relative;
+}
+
+.char {
+  display: inline-block;
+  transition: transform 0.5s ease;
+  will-change: transform;
+}
+
+.animation-wrapper:hover .char:nth-child(odd) {
+  transform: translateY(-100%);
+}
+
+.animation-wrapper:hover .char:nth-child(even) {
+  transform: translateY(100%);
+}
+
+.animation-wrapper:hover .char {
+  transition: transform 0.5s ease;
+}
+ */
+
+
+.pf-new-collection-section .pf-collection-slider .swiper-pagination {
+  position: static;
+  display: flex;
+  gap: 20px;
+  height: fit-content;
+  background-color: transparent;
+}
+
+.pf-new-collection-section .pf-collection-slider .swiper-pagination .image_thumb {
+  width: 50px;
+  height: auto;
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+.pf-new-collection-section .pf-collection-slider .swiper-pagination .image_thumb.swiper-pagination-bullet-active {
+  border: none;
+  background-color: transparent;
+}
+
+.pf-new-collection-section .pf-collection-slider .pf-img-area .swiper-pagination .image_thumb img{
+  border-bottom: none;
+  padding-bottom: 0;
+}

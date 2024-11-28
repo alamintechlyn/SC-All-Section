@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* 1.1	Theme Reset Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+}
+
+
+/* video banner css start */
+.pf-video-banner-section {
+    margin: 55px 0;
+    background: #F3EBE0;
+}
+
+.pf-video-banner-section .pf-left-side {
+    background: #F3EBE0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.pf-video-banner-section .pf-left-side .pf-heading {
+    font-size: 32px;
+    font-weight: 400;
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+.pf-video-banner-section .pf-left-side .pf-sub-heading {
+    font-size: 17px;
+    font-weight: 400;
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    margin-top: 12px;
+    text-align: center;
+}
+
+
+   
+
+   @media (max-width: 575px) {
+    .pf-video-banner-section .pf-left-side .pf-heading{
+        font-size: 25px;
+    }
+    .pf-video-banner-section .pf-left-side .pf-sub-heading{
+        font-size: 15px;
+    }
+    .pf-video-banner-section .pf-left-side .pf-button{
+        font-size: 14px !important;
+        padding: 10px 15px;
+    }
+   
+   }
+
+.pf-video-banner-section .pf-left-side .pf-button {
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFF;
+    font-family: "Poppins", sans-serif;
+    margin: 5px;
+    text-decoration: none;
+    background: #000;
+    padding: 15px 20px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    margin-top: 18px;
+    display: inline-block;
+}
+
+.pf-video-banner-section .pf-container-fluid {
+    --bs-gutter-x: 0;
+    overflow: hidden;
+}
+
+.pf-video-right {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.pf-video-right video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/* responsice */
+@media(min-width:768px) and (max-width:991.98px){
+ .pf-video-right{
+    display: none;
+ }   
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    
+    .pf-video-right{
+        display: none;
+     }  
+}
+@media (max-width: 575px) {
+    .pf-video-right{
+        display: none;
+     }  
+
+}
+
+/* video banner css end */
